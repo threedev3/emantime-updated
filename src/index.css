@@ -1,0 +1,96 @@
+@import url("./assets/font/fonts.css");
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/src/assets/font/Poppins-Regular.ttf");
+}
+
+* {
+  font-family: "Poppins";
+}
+
+.bg-multiple {
+  background-image: url("/src/assets/img/bannerimg.png"),
+    url("/src/assets/img/backimg.png");
+  background-position: center center, center center;
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom scrollbar for WebKit-based browsers */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #888;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #21573f;
+  }
+}
+
+/* Custom scrollbar for Firefox */
+@-moz-document url-prefix() {
+  html,
+  .cust-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: #21573f #888;
+  }
+}
+
+.custom-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1.5rem;
+}
+
+.transition-transform {
+  transition: transform 0.5s ease-in-out;
+}
+.slick-dots li button:before {
+  color: #419714;
+  font-size: 11px;
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+  font-size: 18px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.react-international-phone-country-selector-button,
+.react-international-phone-input-container .react-international-phone-input {
+  border: none;
+}
+.react-international-phone-country-selector-button__flag-emoji {
+  margin: 0 4px 0 0;
+}
+
+.react-international-phone-input-container
+  .react-international-phone-input::placeholder {
+  font-size: 16px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
