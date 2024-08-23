@@ -5,7 +5,7 @@ import "react-international-phone/style.css";
 const PhoneInputComp = ({ value, onChange }) => {
   return (
     <PhoneInput
-      defaultCountry="pk"
+      defaultCountry="us"
       value={value}
       onChange={onChange}
       placeholder="Phone number"
